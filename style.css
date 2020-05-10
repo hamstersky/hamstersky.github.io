@@ -1,5 +1,88 @@
-.profile-pic {
+/* Reset CSS */
+*{margin:0;padding:0;outline:0;font-size:1em;font-weight:normal;font-style:normal;border:0;text-decoration:none;list-style-type:none}
+
+/* Variables */
+:root {
+  --dark-blue: #1D3557; 
+  --whiteish: #F1FAEE;
+  --dark-blue-rbg: 29, 53, 87;
+  --red: #E63946;
+  --light-blue: #457B9D;
+}
+
+/* General */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font: 100 16px 'Roboto';
+  color: var(--whiteish);
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 100;
+}
+
+header {
+  background: var(--dark-blue);
+  height: 100vh;
+  flex-basis: 300px;
+  text-align: center;
+}
+
+header a {
+  color: inherit;
+}
+
+header .profile-pic {
   height: 250px;
   width: 200px;
 }
 
+header nav {
+  display: flex;
+  flex-direction: column;
+}
+
+#landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* width: 100%; */
+  background: linear-gradient(to right, rgba(var(--dark-blue-rbg), 1), rgba(var(--dark-blue-rbg), .8) 80%, rgba(var(--dark-blue-rbg), .5)), url('./img/hero.jpg') no-repeat center/cover;
+}
+
+#landing .cta {
+  width: 250px;
+  background: var(--red);
+  color: var(--whiteish);
+  padding: 20px 0;
+  font-weight: 700;
+  box-shadow: 0px 10px 20px 0px var(--dark-blue);
+}
+
+.code {
+  color: var(--red);
+}
+
+.code::before,
+.code::after {
+  color: var(--light-blue);
+}
+
+.code::before {
+  content: '<';
+}
+
+.code::after {
+  content: ' />'
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
