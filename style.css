@@ -38,8 +38,16 @@ body {
   margin-bottom: 1em !important;
 }
 
+.mt-1 {
+  margin-top: 1em !important;
+}
+
 .mb-2 {
   margin-bottom: 2em !important;
+}
+
+.mt-2 {
+  margin-top: 2em !important;
 }
 
 .mb-3 {
@@ -152,14 +160,16 @@ header.sidebar .active_menu {
 }
 
 #portfolio,
-#landing {
+#landing,
+#about {
   display: flex;
-  position: relative;
   flex-direction: column;
   justify-content: center;
-  text-align: center;
   align-items: center;
+  position: relative;
+  text-align: center;
   width: 100%;
+  max-height: 100vh;
   background: linear-gradient(
     to bottom right,
     rgba(var(--dark-blue-rbg), 1) 50%,
@@ -219,8 +229,9 @@ header.sidebar .active_menu {
 /* Portfolio */
 
 .project-img {
-  max-width: 80%;
+  /* max-width: 80%; */
   max-height: 70vh;
+  flex: 2;
   transition: ease-in 0.4s;
   z-index: 2;
 }
@@ -342,6 +353,18 @@ header.sidebar .active_menu {
 
 .overlay .links a {
   font-weight: 100;
+}
+
+/* About */
+
+#about {
+  text-align: center;
+}
+
+#about p {
+  padding: 0 4em;
+  flex: 2;
+  /* max-width: 60vw; */
 }
 
 /* Media queries */
