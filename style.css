@@ -27,7 +27,7 @@
 
 body {
   display: flex;
-  font: 100 16px 'Roboto';
+  font: 100 16px "Roboto";
   color: var(--whiteish);
   position: relative;
 }
@@ -60,7 +60,7 @@ body {
 
 .highlighted {
   color: var(--red);
-  font-weight: 100;
+  font-weight: 300;
 }
 
 /* Typography */
@@ -151,6 +151,7 @@ header.sidebar nav {
 
 header.sidebar .active_menu {
   color: var(--red);
+  font-weight: 300;
 }
 
 /* Content general rules */
@@ -183,19 +184,21 @@ header.sidebar .active_menu {
 
 .code {
   color: var(--red);
+  font-weight: 300;
 }
 
 .code::before,
 .code::after {
   color: var(--light-blue);
+  font-weight: 100;
 }
 
 .code::before {
-  content: '<';
+  content: "<";
 }
 
 .code::after {
-  content: ' />';
+  content: " />";
 }
 
 .cta {
@@ -225,7 +228,7 @@ header.sidebar .active_menu {
       rgba(var(--dark-blue-rbg), 0.8) 80%,
       rgba(var(--dark-blue-rbg), 0.5)
     ),
-    url('./img/hero.jpg') no-repeat center/cover;
+    url("./img/hero.jpg") no-repeat center/cover;
 }
 
 /* Portfolio */
