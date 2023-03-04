@@ -199,6 +199,7 @@ header.sidebar .active_menu {
 }
 
 .cta {
+  display: inline-block;
   width: 250px;
   background: var(--red);
   color: var(--whiteish);
@@ -208,6 +209,7 @@ header.sidebar .active_menu {
   outline: none;
   transition: linear 0.2s;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .cta:hover {
