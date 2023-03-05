@@ -140,7 +140,7 @@ header.sidebar nav {
   height: 20vh;
   flex-direction: column;
   flex: 2;
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 50px 0 100px 0;
   padding: 3em 0 9em 0;
 }
