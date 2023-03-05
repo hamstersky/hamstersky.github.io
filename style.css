@@ -212,11 +212,12 @@ header.sidebar .active_menu {
   outline: none;
   transition: linear 0.2s;
   cursor: pointer;
-  margin-right: 20px;
+  margin: 10px;
 }
 
-.cta:hover {
+.content .cta:hover {
   transform: scale(0.9);
+  color: var(--whiteish);
 }
 
 /* Landing */
