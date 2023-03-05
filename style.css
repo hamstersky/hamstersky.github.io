@@ -189,6 +189,7 @@ header.sidebar .active_menu {
 .code {
   color: var(--red);
   font-weight: 300;
+  white-space: nowrap;
 }
 
 .code::before,
@@ -364,13 +365,13 @@ header.sidebar .active_menu {
 /* About */
 
 #about {
-  text-align: center;
+  text-align: left;
 }
 
 #about p {
-  padding: 0 4em;
+  /* padding: 0 4em; */
   flex: 2;
-  /* max-width: 60vw; */
+  max-width: 70vw;
 }
 
 /* Media queries */
@@ -431,5 +432,13 @@ header.sidebar .active_menu {
     top: 30px;
     cursor: pointer;
     z-index: 10;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size: 2em;
   }
 }
