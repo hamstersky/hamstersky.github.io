@@ -55,7 +55,7 @@ body {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 .highlighted {
@@ -396,7 +396,7 @@ header.sidebar .active_menu {
   }
 
   .project-img.mobile {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -407,6 +407,14 @@ header.sidebar .active_menu {
     visibility: hidden;
   }
 
+  header.sidebar.open {
+    max-width: 100%;
+    min-width: 100%;
+    visibility: visible;
+    position: absolute;
+    z-index: 5;
+  }
+
   .tagline {
     margin: 2em 0 1em 0;
   }
@@ -415,7 +423,8 @@ header.sidebar .active_menu {
     max-width: 75%;
   }
 
-  .content .menu {
+  .content .menu,
+  .content .close {
     display: block;
     position: absolute;
     left: 30px;
