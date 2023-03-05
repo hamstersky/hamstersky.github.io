@@ -61,7 +61,7 @@ const nextProject = () => {
   } else {
     projects[0].classList.add("active");
   }
-  nextDot();
+  // nextDot();
   toggleActiveOverlay();
 };
 
@@ -73,7 +73,7 @@ const prevProject = () => {
   } else {
     projects[projects.length - 1].classList.add("active");
   }
-  prevDot();
+  // prevDot();
   toggleActiveOverlay();
 };
 
