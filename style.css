@@ -84,7 +84,8 @@ h2 {
 }
 
 p {
-  font-size: 3em;
+  font-size: 2em;
+  line-height: 1.4em;
   font-weight: 100;
 }
 
@@ -164,9 +165,7 @@ header.sidebar .active_menu {
   margin: 1em 0;
 }
 
-#portfolio,
-#landing,
-#about {
+.content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,7 +188,6 @@ header.sidebar .active_menu {
 .code {
   color: var(--red);
   font-weight: 300;
-  white-space: nowrap;
 }
 
 .code::before,
@@ -234,7 +232,7 @@ header.sidebar .active_menu {
       rgba(var(--dark-blue-rbg), 0.8) 80%,
       rgba(var(--dark-blue-rbg), 0.5)
     ),
-    url("./img/hero.jpg") no-repeat center/cover;
+    url("./assets/hero.jpg") no-repeat center/cover;
 }
 
 /* Portfolio */
@@ -242,7 +240,6 @@ header.sidebar .active_menu {
 .project-img {
   max-height: 67vh;
   max-width: 90%;
-  flex: 2;
   transition: ease-in 0.4s;
   z-index: 2;
   margin: auto;
@@ -264,14 +261,18 @@ header.sidebar .active_menu {
 .projects {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 
 .project {
   position: absolute;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   opacity: 0;
   transition: ease-in 0.5s;
+  overflow: hidden;
 }
 
 .project.active {
@@ -345,10 +346,12 @@ header.sidebar .active_menu {
   height: 100%;
   background: rgba(var(--dark-blue-rbg), 0.95);
   z-index: 10;
+  margin: auto;
+  padding: 100px 0;
 }
 
 .overlay p {
-  margin: 20% 10% 100px;
+  margin: 50px 5vw;
 }
 
 .overlay .links {
@@ -366,6 +369,8 @@ header.sidebar .active_menu {
 
 #about {
   text-align: left;
+  justify-content: flex-start;
+  overflow-y: scroll;
 }
 
 #about p {
@@ -439,6 +444,6 @@ header.sidebar .active_menu {
   }
 
   p {
-    font-size: 2em;
+    font-size: 1.25em;
   }
 }
