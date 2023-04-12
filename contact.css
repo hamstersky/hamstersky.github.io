@@ -1,0 +1,40 @@
+#contact {
+  justify-content: start;
+}
+
+.container {
+  width: 100%;
+}
+
+input {
+  display: inline-block;
+  width: 50%;
+  height: 50px;
+  padding: 10px;
+  margin: 30px 5px;
+  background-color: var(--light-blue);
+  color: var(--whiteish);
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  input {
+    width: 70%;
+  }
+}
+
+.input-wrapper::before,
+.input-wrapper::after {
+  color: var(--light-blue);
+  font-weight: 100;
+  font-size: 3em;
+  vertical-align: middle;
+}
+
+.input-wrapper::before {
+  content: "<";
+}
+
+.input-wrapper::after {
+  content: " />";
+}
