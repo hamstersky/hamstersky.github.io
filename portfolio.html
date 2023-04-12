@@ -13,28 +13,28 @@
   <header class="sidebar">
     <div>
       <div class="profile-pic mb-3">
-        <img src="./img/profile.jpg" alt="Dominik Chomicki" />
+        <img src="./assets/profile.jpg" alt="Dominik Chomicki" />
       </div>
       <div class="title">
         <h2>Dominik Chomicki</h2>
-        <h3 class="code">Fullstack Developer</h3>
+        <h3 class="code">Software Developer</h3>
       </div>
     </div>
     <nav>
       <a href="./">Home</a>
       <a href="./portfolio.html" class="active_menu">Portfolio</a>
       <a href="./about.html">About</a>
-      <a href="#">CV</a>
-      <a href="#">Contact</a>
+      <a href="./assets/CV.pdf" target="_blank">CV</a>
+      <a href="./contact.html">Contact</a>
     </nav>
     <div class="icons">
-      <a href="#">
+      <a href="https://www.linkedin.com/in/dominik-chomicki/">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="#">
+      <a href="mailto:chomicki.dominik@gmail.com">
         <i class="fas fa-envelope"></i>
       </a>
-      <a href="#">
+      <a href="https://github.com/hamstersky">
         <i class="fab fa-github"></i>
       </a>
     </div>
@@ -51,54 +51,68 @@
     <div class="projects">
       <div class="project active" id="project-one">
         <h1 class="tagline">
-          <span class="code">Project One</span>
+          <span class="code">Data annotation platform</span>
         </h1>
-        <img src="./img/project_mockup.png" alt="Project One" class="project-img" />
-        <img src="./img/project_mockup_mobile.png" alt="Project One" class="project-img mobile hidden" />
+        <img src="./assets/annotation_platform.png" alt="Screenshof of data annotation platform" class="project-img" />
+        <img src="./assets/annotation_platform_mobile.jpg" alt="Screenshof of data annotation platform"
+          class="project-img mobile hidden" />
         <div class="overlay active_overlay hidden">
           <p>
-            This is project description. Developed in
-            <span class="highlighted">React</span> and also in
-            <span class="highlighted">Express</span>.
+            The goal of this project was to develop a data annotation platform aimed at
+            reconstructing a dataset of traffic participants trajectories at one of the intersections in Copenhagen.
+
+            The initial state in the platform is the output of an algorithm for reconstructing trajectories that I
+            created as part of my research project in ITU.
+
+            The platform provides an interface to label trajectories and make alternative trajectories.
+
+          </p>
+          <p>
+            The platform was built in <span class="highlighted">Python</span> and a popular data visualization
+            framework - <span class="highlighted">Bokeh</span>.
+          </p>
           <div class="links">
-            <a href="https://google.com" target="_blank">
+            <a href="https://github.com/hamstersky/data_annotation_platform" target="_blank">
               <i class="fab fa-github"></i>
               See on Github
             </a>
-            <a href="#">
+            <!-- <a href="#">
               <i class="fas fa-link"></i>
               See live
-            </a>
+            </a> -->
           </div>
-          </p>
         </div>
+        <button class="cta read-more">Read more</button>
       </div>
       <div class="project" id="project-two">
         <h1 class="tagline">
-          <span class="code">Project Two</span>
+          <span class="code">Othello AI</span>
         </h1>
-        <img src="./img/project_mockup.png" alt="Project One" class="project-img" />
-        <img src="./img/project_mockup_mobile.png" alt="Project One" class="project-img mobile hidden" />
+        <img src="./assets/othello.png" alt="Screenshot of othello game" class="project-img" />
+        <img src="./assets/othello_mobile.jpg" alt="Screenshot of othello game" class="project-img mobile hidden" />
         <div class="overlay hidden">
           <p>
-            This is project description. Developed in
-            <span class="highlighted">Ruby</span> and also in
-            <span class="highlighted">Python</span>.
+            The goal of the project was to implement an AI that can play the Othello game. It implements the Minimax
+            algorithm and applies concepts such as alpha-beta pruning and heuristics for optimized performance.
+
+            The project was part of the course in <span class="highlighted">Introduction to Artificial
+              Intelligence</span> at ITU.
+
+          </p>
+          <p>
+            The implementation is done in <span class="highlighted">Java</span>.
+
+          </p>
           <div class="links">
-            <a href="https://google.com" target="_blank">
+            <a href="https://github.com/hamstersky/othello" target="_blank">
               <i class="fab fa-github"></i>
               See on Github
             </a>
-            <a href="#">
-              <i class="fas fa-link"></i>
-              See live
-            </a>
           </div>
-          </p>
         </div>
+        <button class="cta read-more">Read more</button>
       </div>
     </div>
-    <button class="cta read-more">Read more</button>
     <!-- <div class="dots">
       <div class="dot active_dot"></div>
       <div class="dot"></div>
